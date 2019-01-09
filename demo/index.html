@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="dist/css/style.css" />
+</head>
+<body>
+
+  <button class="btn btn--primary" onClick="playTransition()">
+    Play transition
+  </button>
+  <script>
+    function playTransition() {
+      const $transitionElm = document.querySelector('s-deploy-transition')
+      $transitionElm.animateIn().then(function() {
+        $transitionElm.animateOut();
+      });
+    }
+  </script>
+
+	<!-- component test here -->
+  <s-deploy-transition></s-deploy-transition>
+
+	<script src="dist/js/app.js"></script>
+</body>
+</html>

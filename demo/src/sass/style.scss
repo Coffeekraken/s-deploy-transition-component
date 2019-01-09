@@ -1,0 +1,20 @@
+@import 'node_modules/coffeekraken-sugar/index';
+@import 'node_modules/coffeekraken-s-button-component/index';
+
+@include s-setup(());
+@include s-init();
+@include s-classes();
+
+@include s-button-classes();
+
+s-deploy-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+	padding: s-space(bigger);
+}
