@@ -98,7 +98,7 @@ SWebComponent.setDefaultProps({
   }]
 }, 's-deploy-transition')
 // then import the actual layers transition component...
-import SLayersTransitionComponent from 'coffeekraken-s-deploy-transition-component'
+import SDeployTransitionComponent from 'coffeekraken-s-deploy-transition-component'
 ```
 
 2. In the html directly
